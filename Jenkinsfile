@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat label: '', script: 'mvn clean package'
+                bat script: 'mvn clean package'
             }
         }
         
