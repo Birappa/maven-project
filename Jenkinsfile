@@ -9,7 +9,7 @@ pipeline {
 			post {
 				successs {
 					echo 'archiving artifact...'
-					bat script: '**/*.war'
+					bat label: '', script: '**/*.war'
 				}
 			}
         }
