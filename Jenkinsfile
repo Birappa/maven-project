@@ -7,7 +7,7 @@ pipeline {
                 bat script: 'mvn clean package'
             }
 			post {
-				successs {
+				success {
 					echo 'archiving artifact...'
 					bat label: '', script: '**/*.war'
 				}
